@@ -3,9 +3,9 @@
 -> Content and tips taken from the book: RabbitMQ in Action: Distributed Messaging for Everyone
 
 ## Setup:
-- [] Docker
-- [] Docker-Compose
-- [] Install python > Python2.7 
+- [x] Docker
+- [x] Docker-Compose
+- [x] Install python > Python2.7 
 
 # Dev Enviroment
 ## Create a Image to RabbitMQ
@@ -31,3 +31,26 @@ password: guest
 - In menu (right) choice 'VirtualHost'
 - Click in 'Add a new virtual host'
 - Input Name: dev-host
+
+## Add a new Queue:
+- Go in tab 'Queue'
+- Click in 'Add a new queue'
+- Input Name: test-queue
+
+## Add in Message:
+- Click in queue 'test-queue'
+- Click in 'Publish message'
+- input payload: teste
+- click in button 'Publish Message'
+
+## View Message:
+- Refresh page
+- Click in tab 'queue'
+- click in queue 'test-queue'
+- Click in 'Get Messages'
+- click in button 'Get Messages'
+
+
+## Tips:
+- You can understand messages and broker : http://tryrabbitmq.com/
+![Rabbitmq Trye](./img/rabbitMqTry.png "Rabbitmq Trye")
