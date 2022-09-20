@@ -6,6 +6,9 @@
 - [x] Docker
 - [x] Docker-Compose
 - [x] Install python > Python2.7 
+- [x] K8s
+
+---
 
 # Dev Enviroment
 ## Create a Image to RabbitMQ
@@ -25,6 +28,7 @@ http://localhost:15672/
 user: guest
 password: guest
 ```
+![Rabbitmq UI](./img/rabbitmqui.png "Rabbitmq UI")
 
 ## Add a new VHost:
 - Go in tab 'Admin'
