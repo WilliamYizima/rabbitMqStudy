@@ -10,7 +10,7 @@
 
 ---
 
-# Dev Enviroment
+# 01 - Dev Enviroment
 ## Create a Image to RabbitMQ
 ```
 docker build -t testemq --file dockerFileRabbitMq .
