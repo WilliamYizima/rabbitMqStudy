@@ -54,6 +54,9 @@ password: guest
 - Click in 'Get Messages'
 - click in button 'Get Messages'
 
+# 02 - How use Consumer
+
+## Create consumer:
 
 ## Tips:
 - You can understand messages and broker : http://tryrabbitmq.com/
