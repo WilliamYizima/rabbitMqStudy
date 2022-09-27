@@ -21,3 +21,17 @@ spec:
                   default_user_tags.administrator = true
   service:
     type: LoadBalancer
+    # loadBalancerIP: 172.27.3.11
+    # ports:
+    # - port: 5672
+    #   nodePort: 32447
+    #   protocol: TCP
+    #   targetPort: 5672
+    # - port: 15672
+    #   nodePort: 31833
+    #   protocol: TCP
+    #   targetPort: 15672
+    # - port: 15692
+    #   nodePort: 31924
+    #   protocol: TCP
+    #   targetPort: 15692
