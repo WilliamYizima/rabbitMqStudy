@@ -1,0 +1,6 @@
+controller:
+  namespace: ingress-nginx
+  service:
+    loadBalancerIP: 172.27.3.11
+    annotations:
+      service.beta.kubernetes.io/azure-load-balancer-internal: "true"

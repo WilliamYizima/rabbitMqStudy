@@ -2,9 +2,10 @@ apiVersion: rabbitmq.com/v1beta1
 kind: RabbitmqCluster
 metadata:
   name: production-rabbitmqcluster
+  namespace: rabbitmq-system-qa
   labels: 
 spec:
-  replicas: 3
+  replicas: 1
   resources:
     requests:
       cpu: 500m
@@ -13,25 +14,12 @@ spec:
       cpu: 1
       memory: 2Gi
   rabbitmq:
-          additionalConfig: |
-                  log.console.level = info
-                  channel_max = 700
-                  default_user= user 
-                  default_pass = qwer1234
-                  default_user_tags.administrator = true
+    additionalConfig: |
+      log.console.level = info
+      channel_max = 700
+      default_user= nttuser 
+      default_pass = 221746a4c515afdb9eff8f02805a14073416f4a5
+      default_user_tags.administrator = true
+      management.path_prefix = /rabbitmq-ui
   service:
     type: LoadBalancer
-    # loadBalancerIP: 172.27.3.11
-    # ports:
-    # - port: 5672
-    #   nodePort: 32447
-    #   protocol: TCP
-    #   targetPort: 5672
-    # - port: 15672
-    #   nodePort: 31833
-    #   protocol: TCP
-    #   targetPort: 15672
-    # - port: 15692
-    #   nodePort: 31924
-    #   protocol: TCP
-    #   targetPort: 15692
